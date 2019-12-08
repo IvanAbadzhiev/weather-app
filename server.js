@@ -1,6 +1,7 @@
 const Koa = require("koa");
 const Router = require("koa-router");
 const logger = require('koa-logger');
+const cors = require('@koa/cors');
 const dotenv = require("dotenv");
 
 const app = new Koa();
@@ -34,7 +35,8 @@ const PORT = process.env.PORT;
 app.use(logger());
 app.use(router.routes());
 app.use(router.allowedMethods());
-const server = app.listen(PORT);
+app.use(cors());
 
+const server = app.listen(PORT);
 // Exported for the tests
 module.exports = server;
