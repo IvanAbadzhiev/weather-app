@@ -36,7 +36,7 @@ Now the server is running on http://localhost:8207/
 
 To run the tests execute
 ```
-npm runt test
+npm run test
 ```
 
 ### Client App
