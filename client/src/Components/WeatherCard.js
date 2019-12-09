@@ -1,16 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import WeatherImage from "./WeatherImage";
+import { getDayByTimestamp } from "../utils/util";
 
 const WeatherCard = ({ dt, weather, main }) => {
     const { temp_min, temp_max } = main;
-    const timestamp = new Date();
-    timestamp.setTime(dt * 1000); // javascript timestamps are in milliseconds
-    timestamp.toUTCString();
-    
-    // TODO: move it to util function
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const dayOfTheWeek = days[timestamp.getDay()];
+    const dayOfTheWeek = getDayByTimestamp(dt);
 
     return (
         <Card>
