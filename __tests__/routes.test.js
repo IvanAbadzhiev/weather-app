@@ -21,7 +21,7 @@ describe("basic route tests", () => {
         
     });
 
-    test("Home page text should be "Weather API v0.1"", () => {
+    test("Home page text should be \"Weather API v0.1\"", () => {
         expect(response.text).toContain("Weather API v0.1");
     });
 
