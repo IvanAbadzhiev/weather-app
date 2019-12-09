@@ -17,6 +17,10 @@ const WeatherImage = ({ weather }) => {
             weatherIcon = "cloudy";
         break;
 
+        case "Snow":
+            weatherIcon = "snowy-6";
+        break;
+
         default:
             weatherIcon = "cloudy";
         break;
