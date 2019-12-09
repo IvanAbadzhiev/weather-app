@@ -1,8 +1,3 @@
-# weather-app
-
-If you have problem with cors please install https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
-this will solve the problem.
-
 ### How to run the app
 
 First clone the repository
@@ -45,12 +40,21 @@ To run the application go to the **client** folder
 cd client
 ```
 
+The client app is totally different and you should install its module
+```
+npm install
+```
+
 Execute 
 ```
 npm run start
 ```
 
+
 To run the tests
 ```
 I did not have time to me some tests on the react components with Enzyme
 ```
+
+# Troubleshooting
+If you have problem with cors please install https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf this will solve the problem.
