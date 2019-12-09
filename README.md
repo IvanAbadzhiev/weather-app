@@ -8,7 +8,7 @@ this will solve the problem.
 First clone the repository
 
 ```
-https://github.com/IvanAbadzhiev/weather-app.git
+git clone https://github.com/IvanAbadzhiev/weather-app.git
 ```
 
 Go to the project folder 
